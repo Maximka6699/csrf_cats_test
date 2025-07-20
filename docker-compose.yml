@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  csrf:
+    build: .
+    container_name: csrf
+    ports:
+      - '5050:5050'
+    environment:
+      - FLASK_ENV=development
